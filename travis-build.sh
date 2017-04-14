@@ -4,7 +4,6 @@ set -e
 echo "Updating Docker engine to 17.05.0-rc1"
 sudo service docker stop
 curl -fsSL https://test.docker.com/ | sudo sh
-sudo service docker start
 docker version
 
 if [ "$ARCH" != "amd64" ]; then
