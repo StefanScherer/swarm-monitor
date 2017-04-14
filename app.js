@@ -92,9 +92,5 @@ monitor({
     const found = containers.find((item) => {
       return (item.Id === container.Id);
     });
-    // if (found) {
-    //   found.mode = 'down';
-    //   found.animation = 0;
-    // }
   }
 });
