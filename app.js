@@ -61,7 +61,7 @@ const color = function (container) {
 setInterval(() => {
   leds.setAllPixels(0, 0, 0, 0);
   var i = 0;
-  containers.forEach ((container) => {
+  containers.reverse().forEach ((container) => {
     var col = color(container);
     leds.setPixel(i++, col[0], col[1], col[2], col[3]);
   });
