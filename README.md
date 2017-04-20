@@ -26,14 +26,26 @@ docker service create --name whoami stefanscherer/whoami:1.1.0
 Scale service up and down
 
 ```
-docker service scale whoami=2
-docker service scale whoami=7
-docker service scale whoami=1
-docker service scale whoami=8
+docker service scale whoami=4
+docker service scale whoami=16
+docker service scale whoami=32
 ```
+
+![scale up](images/scale-up.gif)
 
 Run a rolling update
 
 ```
 docker service update --image stefanscherer/whoami:1.2.0 --update-parallelism 4  --update-delay 2s whoami
 ```
+
+![scale up](images/rolling-update.gif)
+
+
+Scale down
+
+```
+docker service scale whoami=1
+```
+
+![scale up](images/scale-down-to-one.gif)
