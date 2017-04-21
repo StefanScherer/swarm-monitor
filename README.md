@@ -36,7 +36,8 @@ docker service scale whoami=32
 Run a rolling update
 
 ```
-docker service update --image stefanscherer/whoami:1.2.0 --update-parallelism 4  --update-delay 2s whoami
+docker service update --image stefanscherer/whoami:1.2.0 \
+  --update-parallelism 4  --update-delay 2s whoami
 ```
 
 ![scale up](images/rolling-update.gif)
