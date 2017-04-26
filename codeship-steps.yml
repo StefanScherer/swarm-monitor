@@ -1,6 +1,5 @@
 - name: register
   service: register
-  command: /register.sh --reset
 - name: amd64
   service: amd64
   command: uname -a
