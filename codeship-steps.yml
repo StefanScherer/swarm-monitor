@@ -1,8 +1,10 @@
-- name: register
-  service: register
 - name: amd64
   service: amd64
   command: uname -a
+- name: register
+  service: register
+  command: uname -a
+#  /register.sh --reset
 - name: arm
   service: arm
   command: uname -a
