@@ -1,0 +1,15 @@
+amd64:
+  build:
+    image: stefanscherer/swarm-monitor:linux-amd64
+    dockerfile: Dockerfile.amd64
+arm:
+  build:
+    image: stefanscherer/swarm-monitor:linux-arm
+    dockerfile: Dockerfile.arm
+# arm64:
+#   build:
+#     image: stefanscherer/swarm-monitor:linux-arm64
+#     dockerfile: Dockerfile.arm64
+register:
+  image: hypriot/qemu-register
+  privileged: true
